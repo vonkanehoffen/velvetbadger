@@ -1,0 +1,10 @@
+{
+  "name": "velvet_badger",
+  "description": "velvetbadger.co.uk website",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.10.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
