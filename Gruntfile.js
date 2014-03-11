@@ -1,25 +1,57 @@
 module.exports = function (grunt) {
-    "use strict";
-    grunt.initConfig({
-        "less": {
-            "main": {
-                files: {
-                    "assets/css/main.css": "assets/less/main.less"
-                },
-                options: {
-                    yuicompress: true
-                }
-            }
+  "use strict";
+  grunt.initConfig({
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      all: [
+        'Gruntfile.js',
+        'assets/js/main.js',
+      ]
+    },
+    uglify: {
+      dist: {
+        files: {
+          'assets/js/main.min.js': [
+            'assets/js/main.js',
+          ]
         },
-        "watch": {
-            "main": {
-                "files": ["assets/less/*.less"],
-                "tasks": ["less:main"]
-            }
+        options: {
+          sourceMap: 'assets/js/main.min.js.map',
+          sourceMappingURL: '/assets/js/main.min.js.map'
         }
-    });
-    // Task Loading
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('build', ["less:main"]);
+      }
+    },
+    less: {
+      main: {
+        files: {
+          'assets/css/main.css': 'assets/less/main.less'
+        },
+        options: {
+          compress: true
+        }
+      }
+    },
+    watch: {
+      less: {
+        files: ['assets/less/*.less'],
+        tasks: ['less']
+      },
+      js: {
+        files: [
+          '<%= jshint.all %>'
+        ],
+        tasks: ['jshint', 'uglify']
+      },
+    }
+  });
+  // Task Loading
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  grunt.registerTask('build', ['less', 'jshint', 'uglify']);
+
 };
