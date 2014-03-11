@@ -24,4 +24,9 @@ $(function(){
 	$('#btn-tickets').click(function(e){
 		$('#tickets').show();
 	});
+	$('.back').click(function(e) {
+		$('footer').slideUp(300);
+		$('#subpages').slideUp(300);
+		scroll_to('#home');
+	});
 });

@@ -81,9 +81,22 @@ body, html {
 // Sub pages ------------------------------------------------------------------
 
 #subpages {
+	.back {
+		display: block;
+		width: 97px;
+		padding: 20px 0;
+		font-size: 40px;
+		text-align: center;
+		background: #ccc;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+// Sticky footer
+#subpages {
 	min-height: 100%;
 	/* equal to footer height */
-	margin-bottom: -142px; 
+	margin-bottom: -300px; 
 }
 #subpages:after {
 	content: "";
@@ -91,8 +104,11 @@ body, html {
 }
 footer, #subpages:after {
 	/* .push must be the same height as footer */
-	height: 142px; 
+	height: 300px; 
 }
 footer {
 	background: orange;
+	.container {
+		padding-top: 20px;
+	}
 }
