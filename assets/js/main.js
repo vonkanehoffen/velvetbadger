@@ -12,19 +12,16 @@ function scroll_to(selector) {
 }
 
 $(function(){
-	$('#btn-info').click(function(e){
-		$('#tickets').hide();
-		$('#info').show();
+	$('.btn-hero').click(function(e){
+		$('#subpages section').hide();
 		$('#subpages').slideDown(300);
 		$('footer').show();
-		scroll_to('#info');
+		scroll_to('#subpages');
+	});
+	$('#btn-info').click(function(e){
+		$('#info').show();
 	});
 	$('#btn-tickets').click(function(e){
-		$('#info').hide();
 		$('#tickets').show();
-		$('#subpages').slideDown(300);
-		$('footer').show();
-		scroll_to('#tickets');
 	});
-
 });
