@@ -18,11 +18,19 @@ $(function(){
 		$('footer').show();
 		scroll_to('#subpages');
 	});
-	$('#btn-info').click(function(e){
+	$('.hero .btn-inf').click(function(e){
 		$('#info').show();
 	});
-	$('#btn-tickets').click(function(e){
+	$('.hero .btn-tickets').click(function(e){
 		$('#tickets').show();
+	});
+	$('.subnav .btn-tickets').click(function(e){
+		$('#info').hide();
+		$('#tickets').show();
+	});
+	$('.subnav .btn-inf').click(function(e){
+		$('#info').show();
+		$('#tickets').hide();
 	});
 	$('.back').click(function(e) {
 		$('footer').slideUp(300);
