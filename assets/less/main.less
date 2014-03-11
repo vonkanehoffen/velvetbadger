@@ -6,8 +6,22 @@ body {
 	background: url(../img/rainbow-bg.jpg) top center repeat-x;
 	-webkit-font-smoothing: antialiased;
 }
+body, html {
+	height: 100%;
+}
 
+.home-wrap {
+	display: table;
+	width: 100%;
+	height: 100%;
+	> .inner {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
 .hero {
+
 	background: #333;
 	margin: 40px auto;
 	width: 440px;
