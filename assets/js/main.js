@@ -13,15 +13,17 @@ function scroll_to(selector) {
 
 $(function(){
 	$('#btn-info').click(function(e){
-		$('#tickets').slideUp(300);
-		$('#info').slideDown(300);
-		$('#footer').show();
+		$('#tickets').hide();
+		$('#info').show();
+		$('#subpages').slideDown(300);
+		$('footer').show();
 		scroll_to('#info');
 	});
 	$('#btn-tickets').click(function(e){
-		$('#info').slideUp(300);
-		$('#tickets').slideDown(300);
-		$('#footer').show();
+		$('#info').hide();
+		$('#tickets').show();
+		$('#subpages').slideDown(300);
+		$('footer').show();
 		scroll_to('#tickets');
 	});
 

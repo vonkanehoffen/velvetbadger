@@ -9,6 +9,8 @@ body, html {
 	height: 100%;
 }
 
+// Home page ------------------------------------------------------------------
+
 #home {
 	background: url(../img/rainbow-bg.jpg) top center repeat-x;
 	display: table;
@@ -75,3 +77,22 @@ body, html {
 			cursor: pointer;
 		}
 	}
+
+// Sub pages ------------------------------------------------------------------
+
+#subpages {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -142px; 
+}
+#subpages:after {
+	content: "";
+	display: block;
+}
+footer, #subpages:after {
+	/* .push must be the same height as footer */
+	height: 142px; 
+}
+footer {
+	background: orange;
+}
