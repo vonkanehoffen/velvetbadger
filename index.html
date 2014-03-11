@@ -3,28 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <title>The Velvet Badger | June XX to XX</title>
-  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link href="//fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-  <div class="home-wrap">
+
+  <div id="home">
     <div class="inner">
       <div class="hero">
         <h1 class="logo"><span>The Velvet Badger</span></h1>
         <h2 class="date-location">
-          <span class="top">11th - 12th July 2014</span>
-          <span class="bottom">The Bull i'th Thorn, Buxton</span>
-        </h2>
-        <h3>The weird and wonderful festival</h3> 
-        <h4>by a group of friends for more of their friends.</h4>
-        <a href="info.html" class="btn-hero left">Info</a>
-        <a href="tickets.html" class="btn-hero">Tickets</a>
-        <div class="clearfix"></div>
+         <span class="top">11th - 12th July 2014</span>
+         <span class="bottom">The Bull i'th Thorn, Buxton</span>
+       </h2>
+       <h3>The weird and wonderful festival</h3> 
+       <h4>by a group of friends for more of their friends.</h4>
+       <div class="btn-hero left" id="btn-info">Info</div>
+       <div class="btn-hero" id="btn-tickets">Tickets</div>
+       <div class="clearfix"></div>
+     </div>
+   </div>
+  </div>
+
+  <div id="info" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Information</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Something here</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          <p>Quod, adipisci, autem repellendus consequuntur impedit architecto officia praesentium tempora assumenda perferendis et quidem voluptatem ut dicta esse natus nulla amet explicabo.</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Whatever there</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, tempora, possimus. Quisquam, quasi, neque, earum laborum laboriosam officiis commodi aliquid beatae eos incidunt non numquam possimus placeat. Dicta, explicabo, sequi!</p>
+        </div>
       </div>
     </div>
   </div>
+
+  <div id="tickets" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Buy Tickets</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, veritatis, expedita, molestiae minima perspiciatis fugit sunt itaque aliquam rerum molestias repellat eaque magni beatae temporibus odio quia quibusdam numquam</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Dolor Sit</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti, odio, dicta, veniam repellendus distinctio sapiente et recusandae laborum mollitia dolor deserunt numquam eos doloribus beatae error suscipit quia magni.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ea, esse, quasi enim eius neque qui eveniet inventore deleniti omnis quis voluptatum recusandae dolore quam cumque necessitatibus soluta quaerat ipsam!</p>
+        </div>
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, neque, possimus obcaecati alias earum impedit excepturi laborum harum quod dolores atque unde officiis explicabo mollitia voluptas consequuntur ipsa quisquam beatae!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>  
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.min.js"></script>
 </body>
 </html>
