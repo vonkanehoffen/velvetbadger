@@ -401,8 +401,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  font-family: "Georgia", Helvetica, Arial, sans-serif;
+  color: #000;
 }
 h1 {
   font-weight: normal;
@@ -599,10 +599,10 @@ section * {
 }
 @media (max-width: 768px) {
   .background {
-    -webkit-background-size: auto 200%;
-    -moz-background-size: auto 200%;
-    -o-background-size: auto 200%;
-    background-size: auto 200%;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
   }
 }
 .container {
@@ -679,6 +679,7 @@ section * {
 .header-10 .navbar .btn {
   padding-left: 26px;
   padding-right: 26px;
+  background-color: #1d0e46;
 }
 .header-10 .navbar .btn.btn-primary {
   font-size: 15px;
@@ -846,6 +847,9 @@ section * {
   margin-top: 0;
   margin-bottom: 0;
   float: none;
+
+  padding-top: 464px;
+  padding-bottom: 0;
 }
 @media (min-width: 768px) {
   .header-10-sub.v-center.row:before,
@@ -887,28 +891,25 @@ section * {
   background-color: transparent;
 }
 .header-10-sub .hero-unit h1 {
-  margin: 0 0 30px;
+  margin: 0 0 60px;
   font-size: 45px;
   font-weight: normal;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .header-10-sub .hero-unit p {
   font-size: 25px;
   font-weight: normal;
-  color: #bdc3c7;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
   font-weight: 300;
   line-height: 37.5px;
 }
 @media (max-width: 480px) {
-  .header-10-sub .hero-unit h1 {
+/*  .header-10-sub .hero-unit h1 {
     font-size: 36px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 300;*/
   }
   .header-10-sub .hero-unit p {
     font-size: 22px;
@@ -923,7 +924,6 @@ section * {
   font-weight: normal;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 8px solid white;
   display: inline-block;
   margin: 0;
@@ -1703,9 +1703,9 @@ section * {
   }
 }
 .header-10-sub .background {
-  background-image: url("../img/img-1.jpg");
-  opacity: 0.85;
-  filter: alpha(opacity=85);
+  background-image: url("../img/header-main.jpg");
+  opacity: 1;
+  filter: alpha(opacity=1);
 }
 .header-10 {
   background-color: #1b1f23;
@@ -1716,8 +1716,8 @@ section * {
   background-color: #2ecc71;
 }
 body > section.v-center > div {
-  padding-top: 200px;
-  padding-bottom: 200px;
+      padding-top: 100px;
+      padding-bottom: 100px;
 }
 @media (max-width: 767px) {
   body > section.v-center > div {

@@ -28,6 +28,52 @@ function fadedEls(el, shift) {
     });
 };
 
+(function init(){
+    var countdown = $(".countdown");
+
+    CountDownTimer('07/05/2014 08:00 PM', countdown);
+
+})();
+
+function CountDownTimer(dt, countdown)
+{
+    var end = new Date(dt);
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end.getTime() - now.getTime();
+
+        if (distance < 0) {
+
+            clearInterval(timer);
+            countdown.html("BLAST OFF!");
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        var text = "T-MINUS " + days + ":" + hours + ":" + minutes + ":" + seconds;
+
+        //console.log("distance" , distance );
+
+        countdown.html(text);
+    }
+
+    showRemaining();
+
+    timer = setInterval(showRemaining, 1000);
+}
+
+
 (function($) {
     $(function() {
         var videobackground = new $.backgroundVideo($('#bgVideo'), {
@@ -93,6 +139,9 @@ function fadedEls(el, shift) {
         //         }
         //     });
         // })($('.content-11 > .container'));
+
+    
+
 
         $(window).resize().scroll();
 
