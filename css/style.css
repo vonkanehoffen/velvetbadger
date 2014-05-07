@@ -1436,6 +1436,45 @@ section * {
 .content-11 > .container {
   position: relative;
 }
+
+  .content-11.headliners
+  {
+    background-color: #1d0e46;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .content-11.headliners span
+  {
+    color:#00ff00;
+  }
+
+  .content-11.headliners .hl1
+  {
+    font-size: 1em;
+  }
+  .content-11.headliners .hl2
+  {
+    font-size: 0.9em;
+  }
+  .content-11.headliners .hl3
+  {
+    font-size: 0.7em;
+  }
+  .content-11.headliners .hl4
+  {
+    font-size: 0.7em;
+  }
+  .content-11.headliners .hl5
+  {
+    font-size: 0.7em;
+  }
+  .content-11.headliners .hl6
+  {
+    font-size: 0.6em;
+  }
+
+
 .content-11 .btn {
   margin-left: 33px;
   font-size: 14px;
@@ -1444,12 +1483,28 @@ section * {
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+@media (max-width: 640px) {
+  
+  .content-11.headliners
+  {
+    font-size: 22px;
+  }
+}
+
+
 @media (max-width: 480px) {
   .content-11 > .container > span {
     display: block;
   }
   .content-11 .btn {
     margin: 30px 0 0;
+  }
+
+  .content-11.headliners
+  {
+    font-size: 17px;
   }
 }
 .content-23 {
