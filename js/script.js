@@ -12,7 +12,7 @@ function fadedEls(el, shift) {
 
     $(window).resize(function() {
         if (!el.hasClass('ani-processed')) {
-            el.eq(0).data('scrollPos', el.eq(0).offset().top - $(window).height() + shift);
+            // el.eq(0).data('scrollPos', el.eq(0).offset().top - $(window).height() + shift);
         }
     }).scroll(function() {
         if (!el.hasClass('ani-processed')) {
@@ -26,12 +26,11 @@ function fadedEls(el, shift) {
             }
         }
     });
-};
+}
 
 (function init(){
-    var countdown = $(".countdown");
-
-    CountDownTimer('07/05/2014 08:00 PM', countdown);
+    // var countdown = $(".countdown");
+    // CountDownTimer('07/05/2014 08:00 PM', countdown);
 
 })();
 
@@ -89,7 +88,7 @@ function CountDownTimer(dt, countdown)
             var sH = $(window).height();
             $('section.header-10-sub').css('height', (sH - $('header').outerHeight()) + 'px');
            // $('section:not(.header-10-sub):not(.content-11)').css('height', sH + 'px');
-        });        
+        });
 
         // Parallax
         $('.header-10-sub, .content-23').each(function() {
@@ -120,7 +119,7 @@ function CountDownTimer(dt, countdown)
         //     });
         // })($('.screen'));
 
-       
+
         // (function(el) {
         //     el.css('left', '-100%');
 
@@ -140,7 +139,7 @@ function CountDownTimer(dt, countdown)
         //     });
         // })($('.content-11 > .container'));
 
-    
+
 
 
         $(window).resize().scroll();
@@ -152,4 +151,3 @@ function CountDownTimer(dt, countdown)
         $(window).resize().scroll();
     });
 })(jQuery);
-
