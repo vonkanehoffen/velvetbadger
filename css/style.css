@@ -644,7 +644,7 @@ section * {
 }
 /* header */
 /**
- * Header 10 stylesheet  
+ * Header 10 stylesheet
  * */
 .header-10 {
   position:fixed;
@@ -693,6 +693,7 @@ section * {
 .header-10 .navbar .brand {
   padding-left: 0;
   padding-top: 25px;
+  margin-right: -100%;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
@@ -982,7 +983,7 @@ section * {
 
 /* projects */
 /**
- * Project 3 stylesheet  
+ * Project 3 stylesheet
  * */
 .projects-3 h3 {
   margin: 0 0 80px;
@@ -1115,8 +1116,8 @@ section * {
 }
 /* content */
 /**
- * Content 7 stylesheet  
- * 
+ * Content 7 stylesheet
+ *
 .content-7 {
   position: relative;
   text-align: center;
@@ -1250,7 +1251,7 @@ section * {
   max-height: 100%;
 }*/
 /**
- * Content 8 stylesheet  
+ * Content 8 stylesheet
  */
 .content-8 {
   position: relative;
@@ -1344,7 +1345,7 @@ section * {
 }
 
 /**
- * Content 5 stylesheet  
+ * Content 5 stylesheet
  * */
 .content-5 {
   position: relative;
@@ -1419,7 +1420,7 @@ section * {
 }
 
 /**
- * Content 11 stylesheet  
+ * Content 11 stylesheet
  * */
 .content-11 {
   position: relative;
@@ -1486,7 +1487,7 @@ section * {
 
 
 @media (max-width: 640px) {
-  
+
   .content-11.headliners
   {
     font-size: 18px;
@@ -1643,7 +1644,7 @@ section * {
 }
 /* footer */
 /**
- * Footer 3 stylesheet  
+ * Footer 3 stylesheet
  * */
 .footer-3 {
   font-size: 14px;
@@ -1804,4 +1805,8 @@ body > section.v-center > div {
 .footer-3 {
   background-color: #1B1F23;
   color: #7F8C8D;
+}
+
+.transparent {
+    opacity: 0;
 }
