@@ -693,6 +693,7 @@ section * {
 .header-10 .navbar .brand {
   padding-left: 0;
   padding-top: 25px;
+  margin-right: -100%;
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
